@@ -1,6 +1,6 @@
 return {
 	['testburger'] = {
-		label = 'Test Burger',
+		label = 'Burger Test',
 		weight = 220,
 		degrade = 60,
 		client = {
@@ -17,36 +17,36 @@ return {
 		},
 		buttons = {
 			{
-				label = 'Lick it',
+				label = 'Lecher',
 				action = function(slot)
 					print('You licked the burger')
 				end
 			},
 			{
-				label = 'Squeeze it',
+				label = 'Ecraser',
 				action = function(slot)
 					print('You squeezed the burger :(')
 				end
 			},
 			{
-				label = 'What do you call a vegan burger?',
-				group = 'Hamburger Puns',
+				label = 'Comment appelle-t-on un burger vegan ?',
+				group = 'Blagues Burger',
 				action = function(slot)
-					print('A misteak.')
+					print('Une erreur de steak.')
 				end
 			},
 			{
-				label = 'What do frogs like to eat with their hamburgers?',
-				group = 'Hamburger Puns',
+				label = 'Qu\'est-ce que les grenouilles mangent avec leurs burgers ?',
+				group = 'Blagues Burger',
 				action = function(slot)
-					print('French flies.')
+					print('Des mouches frites.')
 				end
 			},
 			{
-				label = 'Why were the burger and fries running?',
-				group = 'Hamburger Puns',
+				label = 'Pourquoi le burger et les frites couraient ?',
+				group = 'Blagues Burger',
 				action = function(slot)
-					print('Because they\'re fast food.')
+					print('Parce que c\'est du fast food.')
 				end
 			}
 		},
@@ -62,11 +62,11 @@ return {
 		}
 	},
 	['warehouse_key'] = {
-		label = 'Portes Clés',
+		label = 'Clés d\'entrepôt',
 		weight = 100,
 	},
 	['contract'] = {
-		label = 'Contract',
+		label = 'Contrat',
 		weight = 100,
 		stack = true
 	},
@@ -106,20 +106,20 @@ return {
 		}
 	},
 	['medicalbag'] = {
-		label = 'Medical Bag',
+		label = 'Sac Médical',
 		weight = 220,
 		stack = true,
-		description = "A comprehensive medical kit for treating injuries and ailments.",
+		description = "Un kit médical complet pour traiter les blessures et les maladies.",
 		client = {
 			export = 'ars_ambulancejob.placeMedicalBag'
 		}
 	},
-	
+
 	['defibrillator'] = {
-		label = 'Defibrillator',
+		label = 'Défibrillateur',
 		weight = 100,
 		stack = true,
-		description = "Used for reviving patients.",
+		description = "Utilisé pour réanimer les patients.",
 	},
 
 	['condom'] = {
@@ -128,44 +128,44 @@ return {
 		stack = true,
 		description = "Pour la baise, la bonne.",
 	},
-	
+
 	['tweezers'] = {
-		label = 'Tweezers',
+		label = 'Pince à épiler',
 		weight = 100,
 		stack = true,
-		description = "Precision tweezers for safely removing foreign objects, such as bullets, from wounds.",
+		description = "Pince de précision pour retirer les corps étrangers, comme les balles, des plaies.",
 	},
-	
+
 	['burncream'] = {
-		label = 'Burn Cream',
+		label = 'Crème anti-brûlure',
 		weight = 100,
 		stack = true,
-		description = "Specialized cream for treating and soothing minor burns and skin irritations.",
+		description = "Crème spécialisée pour traiter et apaiser les brûlures mineures et irritations cutanées.",
 	},
-	
+
 	['suturekit'] = {
-		label = 'Suture Kit',
+		label = 'Kit de suture',
 		weight = 100,
 		stack = true,
-		description = "A kit containing surgical tools and materials for stitching and closing wounds.",
+		description = "Un kit contenant des outils chirurgicaux et du matériel pour suturer et refermer les plaies.",
 	},
-	
+
 	['icepack'] = {
-		label = 'Ice Pack',
+		label = 'Poche de glace',
 		weight = 200,
 		stack = true,
-		description = "An ice pack used to reduce swelling and provide relief from pain and inflammation.",
+		description = "Une poche de glace utilisée pour réduire les gonflements et soulager la douleur.",
 	},
-	
+
 	['stretcher'] = {
-		label = 'Ice Pack',
+		label = 'Brancard',
 		weight = 200,
 		stack = true,
-		description = "An ice pack used to reduce swelling and provide relief from pain and inflammation.",
+		description = "Un brancard pour transporter les patients.",
 	},
-	
+
 	['emstablet'] = {
-		label = 'Ems tablet',
+		label = 'Tablette EMS',
 		weight = 200,
 		stack = true,
 		client = {
@@ -173,13 +173,13 @@ return {
 		}
 	},
 	['handcuffs'] = {
-		label = 'HandCuffs',
+		label = 'Menottes',
 		weight = 200,
 		stack = true,
-		description = "A nice handcuffs for arrest bad people.",
+		description = "Des menottes pour arrêter les malfaiteurs.",
 	},
 	['black_money'] = {
-		label = 'Dirty Money',
+		label = 'Argent sale',
 	},
 
 	['burger'] = {
@@ -190,7 +190,7 @@ return {
 			anim = 'eating',
 			prop = 'burger',
 			usetime = 2500,
-			notification = 'You ate a delicious burger'
+			notification = 'Vous avez mangé un délicieux burger'
 		},
 	},
 
@@ -202,7 +202,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
-			notification = 'You quenched your thirst with a sprunk'
+			notification = 'Vous vous êtes désaltéré avec un Sprunk'
 		}
 	},
 	['cola'] = {
@@ -213,7 +213,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
-			notification = 'You quenched your thirst with a coca'
+			notification = 'Vous vous êtes désaltéré avec un Coca'
 		}
 	},
 
@@ -228,53 +228,45 @@ return {
 	},
 
 	['garbage'] = {
-		label = 'Garbage',
+		label = 'Déchet',
 	},
 
 	['paperbag'] = {
-		label = 'Paper Bag',
+		label = 'Sac en papier',
 		weight = 1,
 		stack = false,
 		close = false,
 		consume = 0
 	},
 
-	['id_card'] = {
-		label = 'Id Card',
+	['driver_license'] = {
+		label = 'Permis de conduire',
 		weight = 0,
 		stack = false,
 		close = true,
-		description = 'Type of this ID card: Identity',
-		client = {image = 'card_id.png'}
-  	},
+		description = "Pas ouf la photo",
+		client = { image = 'driverlicense.png' }
+	},
 
-	['driver_license'] = {
-        label = 'Drivers License',
-        weight = 0,
-        stack = false,
-        close = true,
-        description = "Your Description",
-        client = {image = 'driverlicense.png'}
-    },
-    ['weaponlicense'] = {
-        label = 'Weapon License',
-        weight = 0,
-        stack = false,
-        close = true,
-        description = "Your Description",
-        client = {image = 'weaponlicense.png'}
-    },
-    ['lawyerpass'] = {
-        label = 'Lawyer Pass',
-        weight = 0,
-        stack = false,
-        close = true,
-        description = "Your Description",
-        client = {image = 'lawyerpass.png'}
-    },
+	['weaponlicense'] = {
+		label = "Permis de port d'armes",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "T'as la permission",
+		client = { image = 'weaponlicense.png' }
+	},
+	['lawyerpass'] = {
+		label = "Badge d'avocat",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Votre badge d'avocat",
+		client = { image = 'lawyerpass.png' }
+	},
 
 	['panties'] = {
-		label = 'Knickers',
+		label = 'Culotte',
 		weight = 10,
 		consume = 0,
 		client = {
@@ -286,48 +278,35 @@ return {
 	},
 
 	['lockpick'] = {
-		label = 'Lockpick',
+		label = 'Crochet',
 		weight = 160,
 	},
-	
+
 	['screwdriver'] = {
 		label = 'Tournevis',
 		weight = 160,
 	},
 
 	['phone'] = {
-		label = 'Phone',
+		label = 'Téléphone',
 		weight = 190,
 		stack = false,
 		consume = 0,
-		client = {
-			add = function(total)
-				if total > 0 then
-					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
-				end
-			end,
-
-			remove = function(total)
-				if total < 1 then
-					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
-				end
-			end
-		}
 	},
 
 	['money'] = {
-		label = 'Money',
+		label = 'Argent',
 	},
 
 	['mustard'] = {
-		label = 'Mustard',
+		label = 'Moutarde',
 		weight = 500,
 		client = {
 			status = { hunger = 25000, thirst = 25000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
 			usetime = 2500,
-			notification = 'You.. drank mustard'
+			notification = "T'as bu... de la moutarde ??"
 		}
 	},
 	["mdt"] = {
@@ -338,7 +317,7 @@ return {
 		}
 	},
 	['water'] = {
-		label = 'Water',
+		label = 'Eau',
 		weight = 500,
 		client = {
 			status = { thirst = 200000 },
@@ -346,11 +325,11 @@ return {
 			prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
 			usetime = 2500,
 			cancel = true,
-			notification = 'You drank some refreshing water'
+			notification = 'Vous avez bu de l\'eau fraîche'
 		}
 	},
 	['armour'] = {
-		label = 'Bulletproof Vest',
+		label = 'Gilet par balle',
 		weight = 3000,
 		stack = false,
 		client = {
@@ -360,12 +339,12 @@ return {
 	},
 
 	['clothing'] = {
-		label = 'Clothing',
+		label = 'Vêtements',
 		consume = 0,
 	},
 
 	['mastercard'] = {
-		label = 'Fleeca Card',
+		label = 'Carte bancaire',
 		stack = false,
 		weight = 10,
 		client = {
@@ -378,18 +357,17 @@ return {
 	},
 	['scrapmetal'] = {
 		label = 'Morceau de métal',
-		weight = 10,	
+		weight = 10,
 	},
 
 	["alive_chicken"] = {
-		label = "Living chicken",
-		weight = 1,
+		label = "Poulet vivant",
 		stack = true,
 		close = true,
 	},
 
 	["blowpipe"] = {
-		label = "Blowtorch",
+		label = "Chalumeau",
 		weight = 2,
 		stack = true,
 		close = true,
@@ -405,39 +383,39 @@ return {
 			anim = 'eating',
 			prop = 'burger',
 			usetime = 2500,
-			notification = 'You ate a delicious burger'
+			notification = 'Vous avez mangé du bon pain'
 		},
 	},
 
 	["carokit"] = {
-		label = "Body Kit",
+		label = "Kit carrosserie",
 		weight = 3,
 		stack = true,
 		close = true,
 	},
 
 	["carotool"] = {
-		label = "Tools",
+		label = "Outils",
 		weight = 2,
 		stack = true,
 		close = true,
 	},
 
 	["clothe"] = {
-		label = "Cloth",
+		label = "Tissu",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["copper"] = {
-		label = "Copper",
+		label = "Cuivre",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 	['cigarettebox'] = {
-		label = 'Paquet de Marlbaré',
+		label = 'Paquet de Malbaré',
 		canUse = true,
 		weight = 10,
 		stack = false,
@@ -445,7 +423,7 @@ return {
 		description = nil
 	},
 	['cigarette'] = {
-		label = 'Cigarette Marlbaré',
+		label = 'Cigarette Malbaré',
 		weight = 5,
 		stack = false,
 		close = true,
@@ -505,7 +483,7 @@ return {
 		description = 'Un briquet pour allumer vos cigarettes, cigares et joints',
 	},
 	["cutted_wood"] = {
-		label = "Cut wood",
+		label = "Bois découpé",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -518,7 +496,7 @@ return {
 	},
 
 	['diagnostic_tool'] = {
-		label = 'Diagnostic Tool',
+		label = 'Outil de diagnostic',
 		weight = 1,
 		stack = true,
 		close = true,
@@ -532,63 +510,63 @@ return {
 	},
 
 	['sponge'] = {
-		label = 'Eponge',
+		label = 'Éponge',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["diamond"] = {
-		label = "Diamond",
+		label = "Diamant",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["essence"] = {
-		label = "Gas",
+		label = "Essence",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["fabric"] = {
-		label = "Fabric",
+		label = "Tissu brut",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["fish"] = {
-		label = "Fish",
+		label = "Poisson",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["fixkit"] = {
-		label = "Repair Kit",
+		label = "Kit de réparation",
 		weight = 3,
 		stack = true,
 		close = true,
 	},
 
 	["fixtool"] = {
-		label = "Repair Tools",
+		label = "Outils de réparation",
 		weight = 2,
 		stack = true,
 		close = true,
 	},
 
 	["gazbottle"] = {
-		label = "Gas Bottle",
+		label = "Bouteille de gaz",
 		weight = 2,
 		stack = true,
 		close = true,
 	},
 
 	["gold"] = {
-		label = "Gold",
+		label = "Or",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -616,21 +594,21 @@ return {
 	},
 
 	["medikit"] = {
-		label = "Medikit",
+		label = "Trousse de soins",
 		weight = 2,
 		stack = true,
 		close = true,
 	},
 
 	["packaged_chicken"] = {
-		label = "Chicken fillet",
+		label = "Filet de poulet",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["packaged_plank"] = {
-		label = "Packaged wood",
+		label = "Bois emballé",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -647,37 +625,37 @@ return {
 		stack = true,
 		close = true,
 	},
-	
+
 	["petrol"] = {
-		label = "Oil",
+		label = "Pétrole brut",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["petrol_raffin"] = {
-		label = "Processed oil",
+		label = "Pétrole raffiné",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["slaughtered_chicken"] = {
-		label = "Slaughtered chicken",
+		label = "Poulet abattu",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["stone"] = {
-		label = "Stone",
+		label = "Pierre",
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	["washed_stone"] = {
-		label = "Washed stone",
+		label = "Pierre lavée",
 		weight = 1,
 		stack = true,
 		close = true,
@@ -697,217 +675,248 @@ return {
 		close = true,
 	},
 	['corn_seed'] = {
-		label = 'Corn Seed',
+		label = 'Graine de maïs',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows corn."
+		description = "Une graine qui fait pousser du maïs."
 	},
-	
+
 	['corn_raw'] = {
-		label = 'Raw Corn',
+		label = 'Maïs brut',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformé."
 	},
-	
+
 	['corn'] = {
-		label = 'Corn',
+		label = 'Maïs',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
-	
+
 	['tomato_seed'] = {
-		label = 'Tomato Seed',
+		label = 'Graine de tomate',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows a tomato."
+		description = "Une graine qui fait pousser une tomate."
 	},
-	
+
 	['tomato_raw'] = {
-		label = 'Raw Tomato',
+		label = 'Tomate brute',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformée."
 	},
-	
+
 	['tomato'] = {
-		label = 'Tomato',
+		label = 'Tomate',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
-	
+
 	['wheat_seed'] = {
-		label = 'Wheat Seed',
+		label = 'Graine de blé',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows Wheat."
+		description = "Une graine qui fait pousser du blé."
 	},
-	
+
 	['wheat_raw'] = {
-		label = 'Raw Wheat',
+		label = 'Blé brut',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformé."
 	},
-	
+
 	['wheat'] = {
-		label = 'Wheat',
+		label = 'Blé',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
-	
+
 	['broccoli_seed'] = {
-		label = 'Broccoli Seed',
+		label = 'Graine de brocoli',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows broccoli."
+		description = "Une graine qui fait pousser du brocoli."
 	},
-	
+
 	['broccoli_raw'] = {
-		label = 'Raw Broccoli',
+		label = 'Brocoli brut',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformé."
 	},
-	
+
 	['broccoli'] = {
-		label = 'Broccoli',
+		label = 'Brocoli',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
 
 	['carrot_seed'] = {
-		label = 'Carrot Seed',
+		label = 'Graine de carotte',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows a carrot."
+		description = "Une graine qui fait pousser une carotte."
 	},
-	
+
 	['carrot_raw'] = {
-		label = 'Raw Carrot',
+		label = 'Carotte brute',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformée."
 	},
-	
+
 	['carrot'] = {
-		label = 'Carrot',
+		label = 'Carotte',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
-	
+
 	['potato_seed'] = {
-		label = 'Potato Seed',
+		label = 'Graine de pomme de terre',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows a potato."
+		description = "Une graine qui fait pousser une pomme de terre."
 	},
-	
+
 	['potato_raw'] = {
-		label = 'Raw Potato',
+		label = 'Pomme de terre brute',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformée."
 	},
-	
+
 	['potato'] = {
-		label = 'Potato',
+		label = 'Pomme de terre',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
-	
+
 	['pickle_seed'] = {
-		label = 'Pickle Seed',
+		label = 'Graine de cornichon',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows a pickle."
+		description = "Une graine qui fait pousser un cornichon."
 	},
-	
+
 	['pickle_raw'] = {
-		label = 'Raw Pickle',
+		label = 'Cornichon brut',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformé."
 	},
-	
+
 	['pickle'] = {
-		label = 'Pickle',
+		label = 'Cornichon',
 		weight = 1,
 		stack = true,
 		close = true,
 	},
-	
+
 	['weed_seed'] = {
-		label = 'Weed Seed',
+		label = 'Graine de weed',
 		weight = 1,
 		stack = true,
 		close = true,
 		description = "Une belle graine pour une belle plante."
 	},
-	
+
 	['weed_raw'] = {
-		label = 'Raw Weed',
+		label = 'Weed brute',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformée."
 	},
-	
-	
+
+
 	['cocaine_seed'] = {
-		label = 'Cocaine Seed',
+		label = 'Graine de coca',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "This is a seed that grows cocaine."
+		description = "Une graine qui fait pousser de la coca."
 	},
-	
+
 	['cocaine_raw'] = {
-		label = 'Raw Cocaine',
+		label = 'Cocaïne brute',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = "You will need to process this."
+		description = "Doit être transformée."
 	},
-	
-	
-	['heroin'] = {
-		label = 'Heroin',
+
+
+	['heroine'] = {
+		label = 'Héroïne',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'De l\'héroïne pure',
+		client = {
+			export = 'mcb_drugs.PackageHeroine'
+		}
+	},
+
+	['seringue'] = {
+		label = 'Seringue vide',
+		weight = 2,
+		stack = true,
+		close = true,
+		description = 'Une seringue vide, peut être remplie'
+	},
+
+	['seringue_heroine'] = {
+		label = 'Seringue d\'héroïne',
+		weight = 12,
+		stack = true,
+		close = true,
+		description = 'Une seringue remplie d\'héroïne'
+	},
+
+	['feuille_ocb'] = {
+		label = 'Feuille OCB',
 		weight = 1,
 		stack = true,
 		close = true,
+		description = 'Une feuille à rouler',
+		client = {
+			export = 'mcb_drugs.RollJoint'
+		}
 	},
-	
+
 	['garden_pitcher'] = {
-		label = 'Garden Pitcher',
+		label = 'Arrosoir',
 		weight = 1,
 		stack = true,
 		durability = 0.3,
 		close = true,
 	},
-	
+
 	['garden_shovel'] = {
-		label = 'Garden Shovel',
+		label = 'Pelle de jardin',
 		weight = 1,
 		stack = true,
 		close = true,
@@ -920,21 +929,21 @@ return {
 		close = true,
 		description = 'De la bonne weed',
 		client = {
-			export = 'mcb_drugs.PackageWeed'  -- Assurez-vous que ceci correspond au nom de votre ressource
+			export = 'mcb_drugs.PackageWeed' -- Assurez-vous que ceci correspond au nom de votre ressource
 		}
 	},
-	
+
 	['cocaine'] = {
-		label = 'Cocaine',
+		label = 'Cocaïne',
 		weight = 10,
 		stack = true,
 		close = true,
 		description = 'De la bonne blanche',
 		client = {
-			export = 'mcb_drugs.PackageCocaine'  -- Assurez-vous que ceci correspond au nom de votre ressource
+			export = 'mcb_drugs.PackageCocaine'
 		}
 	},
-	
+
 	['pochon'] = {
 		label = 'Pochon',
 		weight = 1,
@@ -942,7 +951,7 @@ return {
 		close = true,
 		description = 'Un pochon vide pour emballer la drogue'
 	},
-	
+
 	['poocho_weed'] = {
 		label = 'Pochon de Weed',
 		weight = 15,
@@ -950,13 +959,13 @@ return {
 		close = true,
 		description = 'Un pochon rempli de weed'
 	},
-	
+
 	['poocho_cocaine'] = {
-		label = 'Pochon de Cocaine',
+		label = 'Pochon de Cocaïne',
 		weight = 15,
 		stack = true,
 		close = true,
-		description = 'Un pochon rempli de cocaine'
+		description = 'Un pochon rempli de cocaïne'
 	},
 
 	["cannabis"] = {

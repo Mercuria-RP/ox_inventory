@@ -1,6 +1,6 @@
 return {
 	General = {
-		name = 'Shop',
+		name = '24/7',
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		},
@@ -165,6 +165,17 @@ return {
 		},
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
+		}
+	},
+
+	VendingMachineSnacks = {
+		name = 'Distributeur de snacks',
+		inventory = {
+			{ name = 'water', price = 10 },
+			{ name = 'cola',  price = 10 }
+		},
+		model = {
+			`prop_vend_snak_01`, `prop_vend_snak_01_tu`, `prop_vend_water_01`, `prop_vend_soda_01`
 		}
 	},
 

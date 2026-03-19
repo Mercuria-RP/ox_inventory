@@ -178,6 +178,30 @@ return {
 		stack = true,
 		description = "Des menottes pour arrêter les malfaiteurs.",
 	},
+	['handcuffkey'] = {
+		label = 'Clé de menottes',
+		weight = 50,
+		stack = true,
+		description = "Une clé pour retirer les menottes.",
+	},
+	['spikestrip'] = {
+		label = 'Herse',
+		weight = 5000,
+		stack = true,
+		description = "Une herse pour crever les pneus des véhicules.",
+	},
+	['slug'] = {
+		label = 'Projectile',
+		weight = 10,
+		stack = true,
+		description = "Un projectile récupéré sur une scène de crime.",
+	},
+	['case'] = {
+		label = 'Douille',
+		weight = 5,
+		stack = true,
+		description = "Une douille récupérée sur une scène de crime.",
+	},
 	['black_money'] = {
 		label = 'Argent sale',
 	},

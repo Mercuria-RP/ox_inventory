@@ -189,6 +189,10 @@ return {
 		weight = 5000,
 		stack = true,
 		description = "Une herse pour crever les pneus des véhicules.",
+		consume = 0,
+		client = {
+			event = 'ox_police:useSpikestrip'
+		}
 	},
 	['slug'] = {
 		label = 'Projectile',

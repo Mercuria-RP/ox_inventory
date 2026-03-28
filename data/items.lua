@@ -111,7 +111,7 @@ return {
 		stack = true,
 		description = "Un kit médical complet pour traiter les blessures et les maladies.",
 		client = {
-			export = 'ars_ambulancejob.placeMedicalBag'
+			export = 'ND_Ambulance.useBag'
 		}
 	},
 
@@ -159,9 +159,13 @@ return {
 
 	['stretcher'] = {
 		label = 'Brancard',
-		weight = 200,
-		stack = true,
+		weight = 15000,
+		stack = false,
+		consume = 1,
 		description = "Un brancard pour transporter les patients.",
+		server = {
+			export = 'ND_Ambulance.createStretcher'
+		}
 	},
 
 	['emstablet'] = {
@@ -169,9 +173,112 @@ return {
 		weight = 200,
 		stack = true,
 		client = {
-			export = 'ars_ambulancejob.openDistressCalls'
+			-- export = 'ars_ambulancejob.openDistressCalls' -- TODO: integrate with SnailyCAD later
 		}
 	},
+	-- ND_Ambulance items
+	['defib'] = {
+		label = 'Moniteur/Defibrillateur',
+		weight = 8000,
+		stack = false,
+		consume = 1,
+		client = {
+			export = 'ND_Ambulance.useDefib',
+			add = function(total)
+				if total > 0 then
+					pcall(function()
+						return exports['ND_Ambulance']:hasDefib(true)
+					end)
+				end
+			end,
+			remove = function(total)
+				if total < 1 then
+					pcall(function()
+						return exports['ND_Ambulance']:hasDefib(false)
+					end)
+				end
+			end
+		}
+	},
+	['medbag'] = {
+		label = 'Sac Trauma',
+		weight = 1000,
+		stack = false,
+		consume = 1,
+		server = {
+			export = 'ND_Ambulance.useBag'
+		},
+		client = {
+			export = 'ND_Ambulance.useBag',
+			add = function(total)
+				if total > 0 then
+					pcall(function()
+						return exports['ND_Ambulance']:bag(true)
+					end)
+				end
+			end,
+			remove = function(total)
+				if total < 1 then
+					pcall(function()
+						return exports['ND_Ambulance']:bag(false)
+					end)
+				end
+			end
+		}
+	},
+	['gauze'] = {
+		label = 'Compresses',
+		weight = 80,
+		server = {
+			export = 'ND_Ambulance.treatment'
+		},
+		client = {
+			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+			prop = { model = `prop_toilet_roll_01`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = { move = true, car = true, combat = true },
+			usetime = 2500
+		}
+	},
+	['tourniquet'] = {
+		label = 'Garrot',
+		weight = 85,
+		server = {
+			export = 'ND_Ambulance.treatment'
+		},
+		client = {
+			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = { move = true, car = true, combat = true },
+			usetime = 2500
+		}
+	},
+	['splint'] = {
+		label = 'Attelle',
+		weight = 500,
+		server = {
+			export = 'ND_Ambulance.treatment'
+		},
+		client = {
+			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+			prop = { model = `prop_toilet_roll_01`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = { move = true, car = true, combat = true },
+			usetime = 2500
+		}
+	},
+	['burndressing'] = {
+		label = 'Pansement Brulure',
+		weight = 50,
+		server = {
+			export = 'ND_Ambulance.treatment'
+		},
+		client = {
+			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+			prop = { model = `prop_toilet_roll_01`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = { move = true, car = true, combat = true },
+			usetime = 2500
+		}
+	},
+
 	['handcuffs'] = {
 		label = 'Menottes',
 		weight = 200,

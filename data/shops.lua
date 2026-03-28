@@ -123,22 +123,34 @@ return {
 			{ loc = vec3(841.05, -1034.76, 28.31),  length = 0.6, width = 0.5, heading = 360.0,  minZ = 28.2,  maxZ = 28.6,  distance = 2.0 }
 		}
 	},
-	-- Medicine = {
-	-- 	name = 'Medicine Cabinet',
-	-- 	groups = {
-	-- 		['ambulance'] = 0
-	-- 	},
-	-- 	blip = {
-	-- 		id = 403, colour = 69, scale = 0.8
-	-- 	}, inventory = {
-	-- 		{ name = 'medikit', price = 26 },
-	-- 		{ name = 'bandage', price = 5 }
-	-- 	}, locations = {
-	-- 		vec3(306.3687, -601.5139, 43.28406)
-	-- 	}, targets = {
-
-	-- 	}
-	-- },
+	Pharmacie = {
+		name = 'Pharmacie SAMU',
+		groups = {
+			['ambulance'] = 0
+		},
+		inventory = {
+			{ name = 'bandage',       price = 50 },
+			{ name = 'gauze',         price = 40 },
+			{ name = 'tourniquet',    price = 60 },
+			{ name = 'splint',        price = 80 },
+			{ name = 'burndressing',  price = 70 },
+			{ name = 'defib',         price = 500 },
+			{ name = 'medbag',        price = 300 },
+			{ name = 'stretcher',     price = 250 },
+			{ name = 'defibrillator', price = 500 },
+			{ name = 'tweezers',      price = 200 },
+			{ name = 'burncream',     price = 100 },
+			{ name = 'suturekit',     price = 150 },
+			{ name = 'icepack',       price = 75 },
+			{ name = 'medicalbag',    price = 300 },
+		},
+		locations = {
+			vec3(306.37, -601.51, 43.28)
+		},
+		targets = {
+			{ loc = vec3(306.37, -601.51, 43.28), length = 0.6, width = 0.6, heading = 70.0, minZ = 43.0, maxZ = 43.5, distance = 2.0 }
+		}
+	},
 
 	BlackMarketArms = {
 		name = 'Black Market (Arms)',
